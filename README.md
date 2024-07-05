@@ -1,4 +1,18 @@
-![reversal](https://capsule-render.vercel.app/api?type=rect&text=RECT&fontAlign=30&fontSize=30&desc=Use%20theme&descAlign=60&descAlignY=50&theme=rect)
+![header](https://capsule-render.vercel.app/api?type=rounded&color=gradient&height=300&section=header&text=런트립_웹사이트&fontSize=40)
+
+<h1> <트레드밀 페이스 변환> 이 필요하신가요? </h1>
+<h4>✅ 리액트 활용하여 꾸민 demo web site입니다. </h4>
+🍂 가을의 전설이 되는 날까지 일정을 함께 확인하고, 달리기 훈련 일정을 만들어 보아요 !
+<hr/>
+✨ new! 런트립 후기 링크 수정하고, 웹페이지 주소 생성하였습니다. (24-07-05)
+
+
+
+
+
+
+
+
 
 
 # Getting Started with Create React App
