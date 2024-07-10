@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import { images } from './data/image';
 
 function App() {
   let [글제목, 글제목변경] = useState(['페이스계산기', '대회 일정', '런트립 추천여행지']);
@@ -54,8 +55,6 @@ function App() {
         </div>
       </div>
 
-
-
       <div className='list'>
         <h3>
           {글제목[0]} <span onClick={handleClick}>👍</span>{count}
@@ -96,6 +95,18 @@ function App() {
           <button className="posting" onClick={posting}>여행후기</button>
         </div>
         <p>@yiyangse</p>
+      </div>
+
+      <div className="image-gallery">
+        {images.map((image, index) => (
+          <div key={index} className="card">
+            <img src={image.src} alt={image.title} className="card-img" />
+            <div className="card-body">
+              <h5 className="card-title">{image.title}</h5>
+              <p className="card-text">{image.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
