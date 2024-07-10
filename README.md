@@ -7,9 +7,10 @@
 ✨ new! 런트립 후기 링크 수정하였습니다. (24-07-05)
   ▶️미리보기 /블로그 바로가기
 <href a>https://blog.naver.com/yiyangse/223501718260</href>
-
-
-
+<br/>
+✨ 반응형 카드 list 추가하였습니다. (24-07-11)
+  ▶️미리보기 /블로그 바로가기
+<href a>https://blog.naver.com/yiyangse/223508542570</hresf>
 
 
 
