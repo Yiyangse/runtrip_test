@@ -11,9 +11,11 @@
 ✨ 반응형 카드 list 추가하였습니다. (24-07-11)
   ▶️미리보기 /블로그 바로가기
 <href a>https://blog.naver.com/yiyangse/223508542570</hresf>
-
+<br/>
 ✨ 기존 자바스크립트파일을 타입스크립트 파일로 변환하였습니다.
+<br/>
 ➕ 가독성있는 코드 구성위해 기존 App.js를 index/App/Footer/Header/MainContest 구성했습니다.
+<br/>
 ➕ Tailwind CSS 적용하였습니다. (24-07-12)
 
 
