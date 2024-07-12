@@ -17,6 +17,32 @@
 ➕ 가독성있는 코드 구성위해 기존 App.js를 index/App/Footer/Header/MainContest 구성했습니다.
 <br/>
 ➕ Tailwind CSS 적용하였습니다. (24-07-12)
+<hr/>
+my-project/
+├── src/
+│   ├── components/
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   └── MainContent.tsx
+│   ├── data/
+│   │   └── image.ts
+│   ├── styles/
+│   │   └── App.css
+│   ├── App.test.js
+│   ├── App.tsx
+│   ├── index.css
+│   └── index.tsx
+├── .gitignore
+├── README.md
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── reportWebVitals.js
+├── setupTests.js
+├── tailwind.config.js
+└── tailwind.config.ts
+<hr/>
+
 
 
 
