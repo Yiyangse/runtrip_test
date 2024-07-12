@@ -1,8 +1,15 @@
-![header](https://capsule-render.vercel.app/api?type=rounded&color=gradient&height=300&section=header&text=런트립_웹사이트&fontSize=40)
+<!DOCTYPE html>
+<html lang="en">
 
-<h1> <트레드밀 페이스 변환> 이 필요하신가요? </h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <h1> <트레드밀 페이스 변환> 이 필요하신가요? 런트립! </h1>
 <h4>✅ 리액트 활용하여 꾸민 demo web site입니다. </h4>
-🍂 가을의 전설이 되는 날까지 일정을 함께 확인하고, 달리기 훈련 일정을 만들어 보아요 !
+<!--     ![header](https://capsule-render.vercel.app/api?type=rounded&color=gradient&height=300&section=header&text=런트립_웹사이트&fontSize=40) -->
+</head>
+<body>
+  🍂 가을의 전설이 되는 날까지 일정을 함께 확인하고, 달리기 훈련 일정을 만들어 보아요 !
 <hr/>
 ✨ new! 런트립 후기 링크 수정하였습니다. (24-07-05)
   ▶️미리보기 /블로그 바로가기
@@ -18,29 +25,50 @@
 <br/>
 ➕ Tailwind CSS 적용하였습니다. (24-07-12)
 <hr/>
-my-project/
-├── src/
-│   ├── components/
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   └── MainContent.tsx
-│   ├── data/
-│   │   └── image.ts
-│   ├── styles/
-│   │   └── App.css
-│   ├── App.test.js
-│   ├── App.tsx
-│   ├── index.css
-│   └── index.tsx
-├── .gitignore
-├── README.md
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── reportWebVitals.js
-├── setupTests.js
-├── tailwind.config.js
-└── tailwind.config.ts
+  <h1>런트립 Project Structure</h1>
+  <ul>
+    <li class="folder">my-project
+      <ul>
+        <li class="folder">src
+          <ul>
+            <li class="folder">components
+              <ul>
+                <li class="file">Footer.tsx</li>
+                <li class="file">Header.tsx</li>
+                <li class="file">MainContent.tsx</li>
+              </ul>
+            </li>
+            <li class="folder">data
+              <ul>
+                <li class="file">image.ts</li>
+              </ul>
+            </li>
+            <li class="folder">styles
+              <ul>
+                <li class="file">App.css</li>
+              </ul>
+            </li>
+            <li class="file">App.test.js</li>
+            <li class="file">App.tsx</li>
+            <li class="file">index.css</li>
+            <li class="file">index.tsx</li>
+          </ul>
+        </li>
+        <li class="file">.gitignore</li>
+        <li class="file">README.md</li>
+        <li class="file">package-lock.json</li>
+        <li class="file">package.json</li>
+        <li class="file">postcss.config.js</li>
+        <li class="file">reportWebVitals.js</li>
+        <li class="file">setupTests.js</li>
+        <li class="file">tailwind.config.js</li>
+        <li class="file">tailwind.config.ts</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
+
 <hr/>
 
 
