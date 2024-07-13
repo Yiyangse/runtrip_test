@@ -6,17 +6,47 @@ body {
   @apply bg-orange-400 text-slate-400 border-none py-2 px-4 text-base cursor-pointer rounded transition duration-300;
 }
 
+/* 통일된 버튼 색상 */
+.btn {
+  background-color: coral;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .btn:hover {
-  @apply bg-orange-400;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: darkorange;
+  color: white;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* 기본 커서 설정 */
+body {
+  cursor: default;
+}
+
+/* 버튼에만 커서 포인터 설정 */
+button,
+.btn,
+.navigateToBlog,
+.converter button,
+.navigateToPaceCalculator,
+.marathonOnline button,
+.posting button {
+  cursor: pointer;
 }
