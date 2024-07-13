@@ -45,10 +45,11 @@
             </li>
             <li class="folder">styles
               <ul>
-                <li class="file">App.css</li>
+                <li class="file">global.css</li>
               </ul>
             </li>
             <li class="file">App.test.js</li>
+            <li class="file">App.css</li>
             <li class="file">App.tsx</li>
             <li class="file">index.css</li>
             <li class="file">index.tsx</li>
