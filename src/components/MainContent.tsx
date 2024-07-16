@@ -7,6 +7,7 @@ const MainContent: React.FC = () => {
   const [speed, setSpeed] = useState(''); // 속도 입력 상태
   const [pace, setPace] = useState<string | null>(null); // 페이스 계산 결과 상태
   const [showGallery, setShowGallery] = useState(false); // 이미지 갤러리 표시 상태
+  const [imageLikes, setImageLikes] = useState<{ [key: string]: number }>({}); // 각 이미지의 좋아요 수 상태
 
   // 좋아요 버튼 클릭 핸들러
   const handleLikeClick = () => setLikeCount(likeCount + 1);
@@ -30,6 +31,14 @@ const MainContent: React.FC = () => {
 
   // 이미지 갤러리 표시 핸들러
   const handleShowGallery = () => setShowGallery(true);
+
+  // 이미지 좋아요 클릭 핸들러
+  const handleImageLikeClick = (id: string) => {
+    setImageLikes((prevLikes) => ({
+      ...prevLikes,
+      [id]: (prevLikes[id] || 0) + 1,
+    }));
+  };
 
   return (
     <div className="text-center">
@@ -103,24 +112,36 @@ const MainContent: React.FC = () => {
             className="bg-orange-600 text-white p-2 rounded transition duration-300 hover:bg-orange-800"
             onClick={handleShowGallery}
           >
-            글 읽기
+            갤러리 보기
           </button>
         </div>
       </div>
 
       {/* 이미지 갤러리 섹션 */}
       {showGallery && (
-        <div className="image-gallery opacity-0 transition-opacity duration-1000 ease-in-out">
-          {images.map((image) => (
-            <div key={image.id} className="card m-5 max-w-xs shadow-lg rounded-lg transition duration-300 transform hover:-translate-y-1 hover:shadow-2xl">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="card-img"
-              />
-              <div className="card-title">{image.title}</div>
-            </div>
-          ))}
+        <div className="image-gallery opacity-100 transition-opacity duration-1000 ease-in-out mt-6 p-6 bg-gray-100 rounded-lg shadow-lg">
+          <h3 className="text-2xl mb-4">이미지 갤러리</h3>
+          <div className="flex flex-wrap justify-center">
+            {images.map((image, index) => (
+              <div key={index} className="card m-5 max-w-xs shadow-lg rounded-lg transition duration-300 transform hover:-translate-y-1 hover:shadow-2xl">
+                <img
+                  src={image.src}
+                  alt={image.title}
+                  className="rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h5 className="text-lg font-bold">{image.title}</h5>
+                  <p className="text-sm text-gray-700">{image.description}</p>
+                  <button
+                    className="mt-2 bg-blue-500 text-white p-2 rounded transition duration-300 hover:bg-blue-700"
+                    onClick={() => handleImageLikeClick(index.toString())}
+                  >
+                    좋아요👍 {imageLikes[index.toString()] || 0}
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>
