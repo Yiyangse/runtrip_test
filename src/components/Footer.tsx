@@ -12,6 +12,8 @@ const Footer: React.FC<FooterProps> = ({ navigateToBlog }) => (
     >
       @yiyangse
     </button>
+    <div><p>
+    ⓒ 2024. Yiyangse All rights reserved.</p></div>
   </footer>
 );
 

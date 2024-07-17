@@ -11,13 +11,13 @@ const Header: React.FC<HeaderProps> = ({ navigateToBlog }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveButton((prevActiveButton) => (prevActiveButton + 1) % buttons.length);
-    }, 2000); // 2초마다 색상 변경
+    }, 1000); // 1초마다 색상 변경
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-full bg-coral text-white text-xl flex flex-col items-center">
+    <div className="w-full text-white text-xl flex flex-col items-center">
       <div className="text-center my-4">
         <h1 className="text-xl font-bold">런 트립!</h1>
         <h5 className="text-xs mt-2">가장 나다운 달리기🏃</h5>

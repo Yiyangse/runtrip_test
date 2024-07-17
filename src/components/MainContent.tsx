@@ -1,4 +1,5 @@
-import React, { useState } from 'react'; // React와 useState 훅을 임포트합니다.
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Link 컴포넌트를 임포트합니다.
 import { images } from '../data/image.ts'; // 이미지 데이터를 임포트합니다.
 
 const MainContent: React.FC = () => {
@@ -104,6 +105,14 @@ const MainContent: React.FC = () => {
           >
             글 읽기
           </button>
+          <h5 className="text-lg mb-4">✍️방명록 남기기</h5>
+          <div>
+            <Link to="/board">
+              <button className="bg-orange-600 text-white p-2 rounded transition duration-300 hover:bg-orange-800">
+                Board
+              </button>
+            </Link>
+          </div>
         </div>
         <p className="mt-4">@yiyangse</p>
         <hr className="my-4" />
