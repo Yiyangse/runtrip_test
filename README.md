@@ -36,47 +36,36 @@
   ➕ Link 컴포넌트를 사용하여 "Board" (게시판)로 이동하는 링크를 만들었습니다. (24-07-17)
 <br/>
   <hr/>
-  <h1>런트립 Project Structure</h1>
-  <ul>
-    <li class="folder">my-project
-      <ul>
-        <li class="folder">src
-          <ul>
-            <li class="folder">components
-              <ul>
-                <li class="file">Footer.tsx</li>
-                <li class="file">Header.tsx</li>
-                <li class="file">MainContent.tsx</li>
-              </ul>
-            </li>
-            <li class="folder">data
-              <ul>
-                <li class="file">image.ts</li>
-              </ul>
-            </li>
-            <li class="folder">styles
-              <ul>
-                <li class="file">global.css</li>
-              </ul>
-            </li>
-            <li class="file">App.test.js</li>
-            <li class="file">App.css</li>
-            <li class="file">App.tsx</li>
-            <li class="file">index.css</li>
-            <li class="file">index.tsx</li>
-          </ul>
-        </li>
-        <li class="file">.gitignore</li>
-        <li class="file">README.md</li>
-        <li class="file">package-lock.json</li>
-        <li class="file">package.json</li>
-        <li class="file">postcss.config.js</li>
-        <li class="file">reportWebVitals.js</li>
-        <li class="file">setupTests.js</li>
-        <li class="file">tailwind.config.js</li>
-        <li class="file">tailwind.config.ts</li>
-      </ul>
-    </li>
+<h1>🏃‍♂️ 런트립 Project Structure</h1>
+
+📁 **RUNTRIP**
+- 📁 **src**
+  - 📁 **components**
+    - 📄 Footer.tsx
+    - 📄 Header.tsx
+    - 📄 MainContent.tsx
+  - 📁 **data**
+    - 📄 image.ts
+  - 📁 **pages**
+    - 📁 **board**
+      - 📄 index.tsx
+  - 📁 **styles**
+    - 📄 global.css
+  - 📄 App.test.js
+  - 📄 App.css
+  - 📄 App.tsx
+  - 📄 index.css
+  - 📄 index.tsx
+- 📄 .gitignore
+- 📄 README.md
+- 📄 package-lock.json
+- 📄 package.json
+- 📄 postcss.config.js
+- 📄 reportWebVitals.js
+- 📄 setupTests.js
+- 📄 tailwind.config.js
+- 📄 tailwind.config.ts
+
   </ul>
 </body>
 </html>
