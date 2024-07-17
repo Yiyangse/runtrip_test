@@ -32,7 +32,10 @@
   ✨ 마우스 오버 이슈 해결, 컴파일 오류 개선하였습니다. (24-07-14)
     ▶️미리보기
   <href a>https://blog.naver.com/yiyangse/223511971361</href>
-<hr/>
+<br/>
+  ➕ Link 컴포넌트를 사용하여 "Board" (게시판)로 이동하는 링크를 만들었습니다. (24-07-17)
+<br/>
+  <hr/>
   <h1>런트립 Project Structure</h1>
   <ul>
     <li class="folder">my-project
