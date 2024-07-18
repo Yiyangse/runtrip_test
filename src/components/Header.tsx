@@ -10,30 +10,34 @@ const Header: React.FC<HeaderProps> = ({ navigateToBlog }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveButton((prevActiveButton) => (prevActiveButton + 1) % buttons.length);
+      setActiveButton(
+        (prevActiveButton) => (prevActiveButton + 1) % buttons.length
+      );
     }, 1000); // 1초마다 색상 변경
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-full text-white text-xl flex flex-col items-center">
-      <div className="text-center my-4">
-        <h1 className="text-xl font-bold">런 트립!</h1>
-        <h5 className="text-xs mt-2">가장 나다운 달리기🏃</h5>
+    <div className='w-full text-white text-xl flex flex-col items-center'>
+      <div className='text-center my-4'>
+        <h1 className='text-xl font-bold'>런 트립!</h1>
+        <h5 className='text-xs mt-2'>가장 나다운 달리기🏃</h5>
         <button
-          className="bg-orange-500 text-coral rounded px-4 py-2 font-bold mt-2 transition duration-300 hover:bg-orange-600 hover:text-white"
+          className='bg-orange-500 text-coral rounded px-4 py-2 font-bold mt-2 transition duration-300 hover:bg-orange-600 hover:text-white'
           onClick={navigateToBlog}
         >
           블로그 바로가기
         </button>
       </div>
-      <header className="flex justify-center space-x-4 p-4 w-full">
+      <header className='flex justify-center space-x-4 p-4 w-full'>
         {buttons.map((button, index) => (
           <button
             key={index}
             className={`p-2 rounded transition duration-300 ${
-              activeButton === index ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'
+              activeButton === index
+                ? 'bg-blue-500 text-white'
+                : 'bg-gray-200 text-black'
             }`}
           >
             {button}

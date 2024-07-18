@@ -87,7 +87,7 @@
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 10px;
   color: white;
 }
@@ -97,4 +97,3 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
