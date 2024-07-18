@@ -48,6 +48,7 @@
     - 📄 image.ts
   - 📁 **pages**
     - 📁 **board**
+      - 📄 index.css
       - 📄 index.tsx
   - 📁 **styles**
     - 📄 global.css
