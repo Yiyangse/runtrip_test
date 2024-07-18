@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <h1> <트레드밀 페이스 변환> 이 필요하신가요? 런트립! </h1>
+ <h1> 달리기 커뮤니티 런트립! </h1>
    <img src=https://postfiles.pstatic.net/MjAyNDA3MTRfMTIx/MDAxNzIwOTExNjYzNzEz.0PMUTuYH36FZ5o2AQiwz2VTQI9dqyIcttP7phAPulG4g.MRwflgOuYLjysQUWfQBo4rOuJvwo50zaWAXvMKURgqEg.PNG/image.png?type=w966>
 <h4>✅ 리액트 활용하여 꾸민 demo web site입니다. </h4>
 <img src=https://postfiles.pstatic.net/MjAyNDA3MTVfMjc3/MDAxNzIxMDIwNzU5NDcx.phNv2Y35JPZt0ePPwvMrAzF4Hk0eDLwOLD-zGypmCtMg.waKjo2Rx8bKNZHcUxXS7dpIVFSBziemr_6P8ICNaYr8g.PNG/image.png?type=w966>
@@ -35,6 +35,9 @@
 <br/>
   ➕ Link 컴포넌트를 사용하여 "Board" (게시판)로 이동하는 링크를 만들었습니다. (24-07-17)
 <br/>
+   ✨ 📁board / 📄 index.tsx 게시판 기능을 추가하였습니다. (24-07-18)
+    ▶️미리보기
+   <href a>https://blog.naver.com/yiyangse/223516896746</href>
   <hr/>
 <h1>🏃‍♂️ 런트립 Project Structure</h1>
 
