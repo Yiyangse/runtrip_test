@@ -45,4 +45,24 @@ export const images: Image[] = [
     title: '다양한 볼거리',
     description: 'Description for Image 8',
   },
+  {
+    src: 'https://picsum.photos/200/308',
+    title: '바람이 지나가는 길',
+    description: 'Description for Image 9',
+  },
+  {
+    src: 'https://picsum.photos/200/309',
+    title: '여유가 있는 곳',
+    description: 'Description for Image 10',
+  },
+  {
+    src: 'https://picsum.photos/200/310',
+    title: '즐거운 트래킹',
+    description: 'Description for Image 11',
+  },
+  {
+    src: 'https://picsum.photos/200/311',
+    title: '다양한 볼거리',
+    description: 'Description for Image 12',
+  },
 ];
