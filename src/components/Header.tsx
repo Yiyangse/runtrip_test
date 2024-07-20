@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
   navigateToBlog: () => void;
 }
-//자동으로 색상이 변하는 버튼 만들기
+
 const Header: React.FC<HeaderProps> = ({ navigateToBlog }) => {
   const [activeButton, setActiveButton] = useState(0);
   const buttons = ['계산기', '대회일정', '추천코스', '러닝후기'];
+  const navigate = useNavigate(); // useNavigate 훅 사용
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -17,6 +19,25 @@ const Header: React.FC<HeaderProps> = ({ navigateToBlog }) => {
 
     return () => clearInterval(interval);
   }, []);
+
+  const handleButtonClick = (index: number) => {
+    switch(index) {
+      case 0:
+        navigate('/calculator');
+        break;
+      case 1:
+        navigate('/schedule');
+        break;
+      case 2:
+        navigate('/recommend');
+        break;
+      case 3:
+        navigate('/reviews');
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <div className='w-full text-white text-xl flex flex-col items-center'>
@@ -39,6 +60,7 @@ const Header: React.FC<HeaderProps> = ({ navigateToBlog }) => {
                 ? 'bg-blue-500 text-white'
                 : 'bg-gray-200 text-black'
             }`}
+            onClick={() => handleButtonClick(index)} // 버튼 클릭 시 handleButtonClick 호출
           >
             {button}
           </button>
